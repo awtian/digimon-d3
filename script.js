@@ -7,7 +7,7 @@ d3.csv("digimon.csv", function(ds) {
     .attr('class', 'style_prevu_kit')
     .transition()
     .duration(666)
-    .delay(function(d, i) { return i * 33 })
+    .delay(function(d, i) { return i * 66 })
       .style("display", "flex")
       .style("align-items", "center")
       .style('justify-content', 'center')
