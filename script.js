@@ -4,6 +4,7 @@ d3.csv("digimon.csv", function(ds) {
     .selectAll('div')
     .data(ds)
     .enter().append('div')
+    .attr('class', 'style_prevu_kit')
     .transition()
     .duration(666)
     .delay(function(d, i) { return i * 33 })
@@ -35,7 +36,7 @@ d3.csv("digimon.csv", function(ds) {
       .style("color", "white")
       .text(function(d) {return d.Digimon})
 
-      .on("mouseover", function (d) {
-        select(this).style("color", "blue")
-      })
+      // .on("mouseover", function (d) {
+      //   select(this).style("color", "blue")
+      // })
 })
